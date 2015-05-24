@@ -2,7 +2,7 @@ document.onmousemove = mouseMove;
 	function mouseMove(ev){ 
 	    ev           = ev || window.event; 
 	    var mousePos = mouseCoords(ev); 
-	    document.getElementById(dispXY).innerHTML = mousePos.x;
+	    document.getElementById(dispXY).value = mousePos.x;
 	} 
 	function mouseCoords(ev){ 
 	    if(ev.pageX || ev.pageY){ 
