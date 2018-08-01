@@ -10,6 +10,8 @@
       // 2 - Get the context
       ctx = canvas.getContext('2d');
       // 3 - we can draw, try to change these values
+      
+      ctx.save()
 
       ctx.translate(100, 100);
       ctx.rotate(Math.PI / 4);
@@ -21,6 +23,8 @@
       ctx.fillRect(250, 0, 100, 100);
 
       drawCoordinateSystem('red', 10);
+
+      ctx.restore()
     }
 
     function drawMonster(x, y) {
